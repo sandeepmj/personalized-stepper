@@ -13,4 +13,20 @@ $(document).ready(function () { // wait for the DOM to be ready allowing browser
 			scrollTop: $("#" + mySlideBackground).offset().top //grabs slide id and scrolls
 		}, 400);
 	}); // closes click related functions or events
+
+	// return to checkbox window
+	$(".restart-btn").on("click", function (e) {
+		e.preventDefault(); //have to add this so we don't get weird behavior in older browsers (or IE)
+		console.log("restart button clicked")
+		$(".hide").removeClass('active');
+		scrollyUp();
+	}); // closes click related functions or events
 }); // closes document ready
+
+function scrollyUp() {
+	console.log('jump to top');
+	$('.remove').removeClass('active');
+	$("html,body").animate({
+		scrollTop: $("#checklist-background").offset().top + "px"
+	});
+}
