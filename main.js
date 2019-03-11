@@ -1,6 +1,6 @@
 $(document).ready(function () { // wait for the DOM to be ready allowing browser to read all of the HTML and build the elements
 	//function to traverse all the possible paths
-	$(".traverse-btn").on("click", function (e) {
+	$(".traverse-btn,.big-btn").on("click", function (e) {
 		e.preventDefault(); //have to add this so we don't get weird behavior in older browsers (or IE)
 		console.log("Button got clicked")
 		var myPath = $(this), // this button clicked,
