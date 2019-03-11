@@ -192,11 +192,6 @@ h3 {
     border: none;
 }
 
-.disable-btn {
-    background-color: gray;
-    opacity: .5;
-}
-
 .photo {
     width: 100%;
     display: block;
