@@ -78,7 +78,7 @@ html, body {
 }
 
 .image {
-    background-position: bottom center;
+    background-position: top center;
     background-image: url(img/dogs.jpg);
 }
 
