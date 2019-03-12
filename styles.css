@@ -57,6 +57,7 @@ html, body {
         padding: 0px;
 }
 
+/* The landing page is styled differently than the individual paths */
 .intro {
     /* font: 1.1em "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif; */
     width: 100%;
@@ -67,7 +68,7 @@ html, body {
     height: 100%;
 }
 
-.image, .endimage {
+.image {
     display: block;
     margin: 0 auto;
     overflow: auto;
@@ -75,13 +76,11 @@ html, body {
     width: 100%;
     height: 100%;
     background-size: cover;
-}
-
-.image {
     background-position: top center;
     background-image: url(img/dogs.jpg);
 }
 
+/* Creates the gray overlay on top of image */
 .section-wrap {
     overflow: auto;
     padding: 2%;
@@ -97,6 +96,7 @@ html, body {
     left: 10%;
 }
 
+/* styling for headlines and subheads and text on landing page */
 .landing-page {
     font-size: 2em;
     text-transform: uppercase;
@@ -123,6 +123,7 @@ html, body {
     padding: 10px 0px 0px 0px;
 }
 
+/* styles button on landing page, different than other buttons. */
 input.start-btn {
     color: rgb(255, 255, 255);
     font-size: 1em;
@@ -144,6 +145,7 @@ h3 {
     margin-bottom: 10%;
 }
 
+/* styling buttons in the paths */
 .steps-btn, .restart-btn {
     background-color: #56C0E0;
     padding: 10px 20px 10px 20px;
@@ -159,6 +161,7 @@ h3 {
     border: none;
 }
 
+/* hiding and revealing various paths */
 h1.hidden {
     display: none;
 }
@@ -171,6 +174,7 @@ h1.hidden {
     display: block;
 }
 
+/* all divs below the landing page are hidden and revealed when btn clicked */
 .choices, .choices-background {
     background-color: #B3CCCC;
     width: 100%;
@@ -192,37 +196,10 @@ h1.hidden {
     padding-top: 10px;
 }
 
-/*space to enter number of family members*/
-.input-space {
-    width: 20%;
-    border-radius: 5px;
-    padding: 5px 5px;
-    margin: 8px 0;
-    font-size: 1em;
-    box-sizing: border-box;
-}
-
-/*make checkbox size larger*/
-input[type=checkbox] {
-    width: 1.5em;
-    height: 1.5em;
-    /* Changes space between checkboxes*/
-    /*transform: scale(1.5);*/
-    /*If transform scale uncommented, then the checkboxes appear on top of the bar at bottom.*/
-}
-
-.checks {
-    display: block;
-}
-
 /* Tablet/Desktop overrides */
 @media only screen and (min-width: 481px) and (max-width:768px) {
 
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-    .endimage {
-        background-position: top right;
-    }
-
     .landing-page {
         font-size: 3.5em;
     }
@@ -232,23 +209,14 @@ input[type=checkbox] {
         font-size: 1.2em;
     }
 
-    input.begin-journey {
+    input.start-btn {
         font-size: 1.5em;
         font-weight: 900;
-    }
-
-    input[type=checkbox] {
-        width: 1.5em;
-        height: 2em;
     }
 
     .text {
         width: 80%;
         margin: auto;
-    }
-
-    .endsection-wrap {
-        width: 85%;
     }
 }
 
@@ -264,15 +232,7 @@ input[type=checkbox] {
     }
 
     .text {
-        width: 50%;
+        width: 500px;
         margin: auto;
-    }
-
-    .endsection-wrap {
-        width: 48%;
-    }
-
-    .end-text {
-        font-size: 1 em;
     }
 }
