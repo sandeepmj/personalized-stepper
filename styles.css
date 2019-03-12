@@ -9,6 +9,10 @@ You will find this is far easier than the opposite task of using CSS to cram you
    v2.0 | 20110126
    License: none (public domain)
 */
+* {
+    box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -54,8 +58,7 @@ html, body {
 }
 
 .intro {
-    /*background-color: #EFC166;*/
-    font: 1.1em "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+    /* font: 1.1em "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif; */
     width: 100%;
     /*padding: 10px;*/
     margin-left: auto;
@@ -79,11 +82,6 @@ html, body {
     background-image: url(img/dogs.jpg);
 }
 
-.endimage {
-    /*background-position: top center;*/
-    background-image: url(img/road.jpg);
-}
-
 .section-wrap {
     overflow: auto;
     padding: 2%;
@@ -97,22 +95,6 @@ html, body {
     font-family: 'georgia';
     top: 10%;
     left: 10%;
-}
-
-.endsection-wrap {
-    overflow: auto;
-    padding: 2%;
-    padding-bottom: 100px;
-    width: 90%;
-    display: block;
-    margin: 3% auto 2%;
-    background-color: rgba(0, 0, 0, .65);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-    color: #fff;
-    font-family: 'georgia';
-    top: 10%;
-    right: 10%;
 }
 
 .landing-page {
@@ -141,18 +123,8 @@ html, body {
     padding: 10px 0px 0px 0px;
 }
 
-.end-text {
-    display: block;
-    margin-top: 1%;
-    text-transform: none;
-    font-size: 1em;
-    line-height: 1.5em;
-    font-weight: normal;
-    padding: 10px 0px 0px 0px;
-}
-
 input.traverse-btn {
-    color: white !important;
+    color: rgb(255, 255, 255);
     font-size: 1em;
     text-transform: uppercase;
     font-weight: 900;
@@ -190,20 +162,6 @@ h3 {
     text-decoration: none;
     cursor: poiner;
     border: none;
-}
-
-.photo {
-    width: 100%;
-    display: block;
-    z-index: -1;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    /*margin: 0 auto;*/
-}
-
-.highlight {
-    font-weight: bold;
 }
 
 h1.hidden {
