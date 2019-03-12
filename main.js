@@ -1,6 +1,6 @@
 $(document).ready(function () { // wait for the DOM to be ready allowing browser to read all of the HTML and build the elements
 	//function to traverse all the possible paths
-	$(".traverse-btn,.big-btn").on("click", function (e) { //note this captures click on either the start button or path buttons
+	$(".start-btn,.steps-btn").on("click", function (e) { //note this captures click on either the start button or path buttons
 		e.preventDefault(); //have to add this so we don't get weird behavior in older browsers (or IE)
 		var myPath = $(this), // this button clicked,
 			mySlide = myPath.data('id'); //grab id info in the data attribute data-id
