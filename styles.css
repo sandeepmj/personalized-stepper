@@ -183,7 +183,7 @@ h1.hidden {
     margin-right: auto;
     font: 1.1em "georgia";
     overflow: hidden;
-    min-height: 600px;
+    min-height: 100vh;
     line-height: 1.5em;
 }
 
